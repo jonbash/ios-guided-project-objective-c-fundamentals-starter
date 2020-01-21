@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JBPersonController.h"
+
+// forward class declaration - saying "I have a class named JBPersonController, don't worry!"
+@class JBPersonController;
 
 @interface LSIPersonSearchTableViewController : UITableViewController <UISearchBarDelegate>
 
-// TODO: Create an array to store people, that the table view can load
+@property NSArray *people;
+@property JBPersonController *personController;
 
 @end
