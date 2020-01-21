@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-NSData *loadFile(NSString *filename, NSBundle *bundle) {
+NSData *jbLoadFile(NSString *filename, NSBundle *bundle) {
 	NSString *basename = [filename stringByDeletingPathExtension];
 	NSString *extension = [filename pathExtension];
 	
